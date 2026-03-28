@@ -85,18 +85,6 @@ The `infra-app` module creates reusable infrastructure components such as:
 * DynamoDB Table
 * S3 Bucket
 
-The root configuration deploys multiple environments using this module.
-
-Example:
-
-```
-module "dev-infra" {
-  source         = "./infra-app"
-  env            = "dev"
-  instance_count = 1
-  instance_type  = "t3.small"
-}
-```
 
 ---
 
